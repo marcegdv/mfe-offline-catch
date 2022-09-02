@@ -23,8 +23,6 @@ const Productos = (props: ProductosProps) => {
                     <Producto
                         key={item.id}
                         {...item}
-                        //botonAgregar={BotonProducto('Agregar')}
-                        //botonEliminar={BotonProducto('Quitar')}
                     />
                 )}
             </div>
@@ -36,22 +34,3 @@ const Productos = (props: ProductosProps) => {
 };
 
 export default Productos;
-
-const BotonProducto = (label: string): React.ReactElement => {
-    return (
-        <div onClick={() => { }}
-            style={{
-                border: '2px solid #07f',
-                borderRadius: '4px',
-                width: 'fit-content',
-                padding: '4px',
-                fontSize: '12px',
-                color: 'black',
-                backgroundColor: 'white',
-                cursor: 'pointer'
-            }}
-        >
-            {label}
-        </div>
-    )
-};
