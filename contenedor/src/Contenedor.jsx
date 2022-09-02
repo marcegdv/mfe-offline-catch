@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import ErrorBoundary from './ErrorBoundary';
+import logo from './logo.svg';
 
 // import Producto from 'mfeProductos/Producto';
 const Producto = React.lazy(() => import('mfeProductos/Producto'));
@@ -29,11 +30,11 @@ const Contenedor = () => {
                 <Suspense fallback={<div>Loading...</div>}>
                     <Producto
                         id={1}
-                        nombre='Emperor: Battle for Fune'
-                        descripcion='El juego creador del término "Estrategia en tiempo real" (del inglés: Real Time Strategy).'
+                        nombre='ReactJS'
+                        descripcion='Micro-frontend en React.'
                         precio={75}
-                        imagenUrl='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4ZuTJVZo-O7v3bmyL_GLC6akuo3LqsFMnQ'
-                        etiquetas={['informatica', 'monitor']}
+                        imagenUrl='https://ih1.redbubble.net/image.726903102.2890/pp,840x830-pad,1000x1000,f8f8f8.u1.jpg'
+                        etiquetas={[]}
                         cantidad={2}
                     />
                 </Suspense>
