@@ -1,0 +1,39 @@
+.producto-container {
+    width: 400px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid orange;
+    color: #afa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.producto-imagen {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.producto-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8px;
+}
+
+.producto-nombre {
+    font-size: 16px;
+    display: block;
+}
+
+.producto-precio {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.producto-descripcion {
+    font-size: 12px;
+    display: block;
+}
